@@ -1,6 +1,6 @@
 # Bank Account!
 
-A litle system developed in Java to simulate a bank account create, this project was developed to remember begginer conceps about Java.
+A little system developed in Java to simulate a bank account create, this project was developed to remember begginer conceps about Java.
 
 
 ## Folder Structure
