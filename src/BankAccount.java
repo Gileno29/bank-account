@@ -1,20 +1,30 @@
-public class ContaBanco {
+public class BankAccount {
 
-    String clientName;
-    int number;
-    int agency;
-    double balance=0;
-
-
+   private String clientName;
+   private int number;
+   private int agency;
+   private double balance=0;
 
 
+public String createAccount(String client, int number, int agency, double balance){
+    setAgency(agency);
+    setClientName(client);
+    setNumber(number);
+    if (this.number==number){
+        return "Olá" +getClientName()+", obrigado por criar uma conta em nosso banco, sua agência é" + getAgency() + ", conta "+ getNumber() +"e seu saldo" + getBalance()+"já está disponível para saque";
+    }
+    return "Is not possible create an account";
+}
 
-    public double getBalance(){
-        
+
+    public double getBalance(){     
 
         return this.balance;
     }
 
+    public void setBalance(double balance){
+        this.balance=balance;
+    }
     public void showBalance(){
         System.out.println("Current Balance: " + this.balance);
     } 
