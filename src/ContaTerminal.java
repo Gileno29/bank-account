@@ -1,4 +1,4 @@
-public class BankAccount {
+public class ContaTerminal {
 
    private String clientName;
    private int number;
@@ -6,12 +6,13 @@ public class BankAccount {
    private double balance=0;
 
 
-public String createAccount(String client, int number, int agency, double balance){
+    public String createAccount(String client, int number, int agency, double balance){
     setAgency(agency);
     setClientName(client);
     setNumber(number);
+    setBalance(balance);
     if (this.number==number){
-        return "Olá" +getClientName()+", obrigado por criar uma conta em nosso banco, sua agência é" + getAgency() + ", conta "+ getNumber() +"e seu saldo" + getBalance()+"já está disponível para saque";
+        return "Olá " +getClientName()+" , obrigado por criar uma conta em nosso banco, sua agência é " + getAgency() + ", conta "+ getNumber() +" e seu saldo " + getBalance()+" já está disponível para saque";
     }
     return "Is not possible create an account";
 }
