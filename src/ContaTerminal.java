@@ -7,14 +7,14 @@ public class ContaTerminal {
 
 
     public String createAccount(String client, int number, int agency, double balance){
-    setAgency(agency);
-    setClientName(client);
-    setNumber(number);
-    setBalance(balance);
-    if (this.number==number){
-        return "Olá " +getClientName()+" , obrigado por criar uma conta em nosso banco, sua agência é " + getAgency() + ", conta "+ getNumber() +" e seu saldo " + getBalance()+" já está disponível para saque";
-    }
-    return "Is not possible create an account";
+        setAgency(agency);
+        setClientName(client);
+        setNumber(number);
+        setBalance(balance);
+        if (this.number==number){
+            return "Olá " +getClientName()+" , obrigado por criar uma conta em nosso banco, sua agência é " + getAgency() + ", conta "+ getNumber() +" e seu saldo " + getBalance()+" já está disponível para saque";
+        }
+        return "Is not possible create an account";
 }
 
 
